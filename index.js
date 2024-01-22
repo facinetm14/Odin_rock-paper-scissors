@@ -51,11 +51,14 @@ const playRound = (gameScore, playerSelection, computerChoice) => {
     }
 }
 
+const getPlayerChoice = () => {
+    return prompt('Type Rock or Paper or Scissor');
+}
 const game = () => {
     const gameScore = { player1: 0, player2: 0 };
 
     for (let i = 0; i < MAX_ROUND; i++) {
-        console.log(playRound(gameScore, 'Rock', getComputerChoice()));
+        console.log(playRound(gameScore, getPlayerChoice(), getComputerChoice()));
     }
     if (gameScore.player1 > gameScore.player2) {
         console.log(`CONGRATS! You win ${gameScore.player1} - ${gameScore.player2}`);
