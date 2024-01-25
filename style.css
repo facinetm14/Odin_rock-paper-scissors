@@ -1,0 +1,76 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 100px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#game {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+header {
+    text-align: center;
+}
+.heder h1 {
+    font-weight: bolder;
+
+}
+.game-board {
+    border: 1Px solid white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.game-board h2 {
+    text-align: center;
+}
+.game-board__score {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.game-board button {
+    outline-style: none;
+    background-color: darkgray;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 5px;
+    transition: transform 0.5s ease;
+}
+.player-title {
+    display: flex;
+    justify-content: center;
+}
+.player-title h2 {
+    margin-left: 5px;
+    font-size: 30px;
+    padding-bottom: 3px;
+}
+#game-state {
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+}
+.selected {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 2Px ghostwhite;
+}
+
+.game-state--finished {
+    font-size: 30px;
+    border-radius: 10px;
+    padding-top: 15px;
+    font-weight: bolder;
+}
+.game-state--win {
+    background-color: green;
+}
+.game-state--lose {
+    background-color: red;
+}

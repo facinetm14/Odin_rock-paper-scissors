@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<script src="index.js"></script>
+    <div class="container">
+        <header>
+            <h1>Welcome to Rock-Paper-Scissor game</h1>
+            <p>
+                <strong>Rules:</strong>
+                Paper beats Rock, Rock beats Scissor and Scissor beats Paper.</br>
+                Best 5 wins - meaning the first one to reach score 5 wins.</br>
+            <p>
+        </header>
+        <div id="game">
+            <div class="game-board" id="player">
+                <div class="player-title">
+                    <img src="images/user-solid-grey.svg" width="30">
+                    <h2>Player</h2>
+                </div>
+                <div class="game-board__score" id="score1">0</div>
+                <div>
+                    <button id="player-rock" class="player__options" data-game-option="rock">
+                        <img src="images/rock.png" width="65"/>
+                    </button>
+                    <button id="player-paper" class="player__options" data-game-option="paper">
+                        <img src="images/paper.png" width="65"/>
+                    </button>
+                    <button id="player-scissor" class="player__options" data-game-option="scissor">
+                        <img src="images/scissors.png" width="65"/>
+                    </button>
+                </div>
+            </div>
+            <div class="game-board" id="computer">
+                <div class="player-title">
+                    <img src="images/laptop-solid-grey.svg" width="40">
+                    <h2>Computer</h2>
+                </div>
+                <div class="game-board__score" id="score2">0</div>
+                <button id="computer-rock">
+                    <img src="images/rock.png" width="65" />
+                </button>
+                <button id="computer-paper">
+                    <img src="images/paper.png" width="65" />
+                </button>
+                <button id="computer-scissor">
+                    <img src="images/scissors.png" width="65" />
+                </button>
+            </div>
+        </div>
+        <div id="game-state"></div>
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
