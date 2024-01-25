@@ -1,5 +1,5 @@
 # Odin_rock-paper-scissors
-This project is from <a href="https://www.theodinproject.com/">TheOdinProject</a>which consists of building the clasic Rock Raper Scissor game.<br/>
+This project is from <a href="https://www.theodinproject.com/"> TheOdinProject </a> which consists of building the clasic Rock Raper Scissor game.<br/>
 The rule is simple, Rock beats Scissor, Scissor beats Paper and Paper beats Rock.
 
 ## Technos
